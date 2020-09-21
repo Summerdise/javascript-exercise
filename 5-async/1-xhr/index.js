@@ -4,7 +4,7 @@ function fetchData(url, successCallback, errorCallback) {
   // TODO 21: 通过XMLHttpRequest实现异步请求
   xhr.open('GET', url);
   xhr.onreadystatechange = function() {
-    if (4 === xhr.readyState) {
+    if (4 !== xhr.readyState) {
       return;
     }
     if (200 === xhr.status) {
