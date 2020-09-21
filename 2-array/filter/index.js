@@ -6,11 +6,11 @@ function chooseMultiplesOfThree(collection) {
 }
 
 function chooseNoRepeatNumber(collection) {
-  let temp = new Set();
+  const temp = new Set();
   collection.forEach(element => {
     temp.add(element);
   });
-  let result = [];
+  const result = [];
   temp.forEach(element => {
     result.push(element);
   });
